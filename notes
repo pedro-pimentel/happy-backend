@@ -1,0 +1,13 @@
+//Rota = conjunto
+//Recurso = usuário
+
+//Métodos HTTP = GET, POST, PUT, DELETE
+
+//GET =  buscar uma informação
+//POST = criando uma informação
+//PUT = editando um informação
+//DELETE = deletando um informação
+
+//Query Params = http://localhost/3333/users?search=diego
+//Route Params = http://localhost/3333/users/1
+//Body = http://localhost/3333/users (Identificar um recurso)
