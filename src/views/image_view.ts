@@ -1,15 +1,14 @@
-import Image from '../model/Image';
+import Image from "../model/Image";
 
 export default {
-    render(image: Image) {
-        return {
+  render(image: Image) {
+    return {
+      id: image.id,
+      url: `${process.env.API_URL}/uploads/${image.path}`
+    };
+  },
 
-            id: image.id,
-            url: `http://10.0.0.102:3333/uploads/${image.path}`,
-        };
-    },
-
-    renderMany(images: Image[]){
-        return images.map(image => this.render(image) )
-    }
-}
+  renderMany(images: Image[]) {
+    return images.map(image => this.render(image));
+  }
+};
