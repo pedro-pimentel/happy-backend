@@ -14,7 +14,7 @@ import errorHandler from './errors/handler';
 const app = express();
 
 var corsOptions = {
-    origin: 'https://happy-web-deploy.netlify.app/',
+    origin: 'https://happy-backend-nlw.herokuapp.com/',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
