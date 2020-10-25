@@ -13,12 +13,12 @@ import errorHandler from './errors/handler';
 
 const app = express();
 
-var corsOptions = {
-    origin: 'https://happy-backend-nlw.herokuapp.com/',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+// var corsOptions = {
+//     origin: 'https://happy-backend-nlw.herokuapp.com/',
+//     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+// }
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
