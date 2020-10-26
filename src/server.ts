@@ -13,10 +13,10 @@ import errorHandler from './errors/handler';
 
 const app = express();
 
-var corsOptions = {
-    origin: 'https://happy-web-deploy.netlify.app/',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+// var corsOptions = {
+//     origin: 'https://happy-web-deploy.netlify.app/',
+//     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+// }
 
 // app.use(cors());
 app.use(express.json());
